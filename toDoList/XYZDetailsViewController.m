@@ -169,7 +169,7 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
     }
     else if(![toDoItem.itemName isEqualToString:self.name1.text]){
           toDoItem.itemName = self.name1.text;
-          [findMatches findItem:toDoItem];
+          [findMatches find];
 
           int64_t delayInSeconds = 1;
           dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
@@ -307,7 +307,7 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
       NSLog(@"location Switch turned on");
 
       toDoItem.hasLocation = true;
-      [findMatches findItem:toDoItem];
+      [findMatches find];
 
       NSLog(@"%@", toDoItem.closeMatch.description);
 

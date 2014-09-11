@@ -37,7 +37,7 @@ static NSString *CellIdentifier = @"CellIdentifier";
     // Make query after item is added
     if (item != nil) {
         [toDoItems addObject:item];
-        [findMatches findItem:item];
+        [findMatches find];
         [self.tableView reloadData];
     }
     //NSLog(@"%@", item.itemLocation);
@@ -59,10 +59,16 @@ static NSString *CellIdentifier = @"CellIdentifier";
     [[UIApplication sharedApplication] cancelAllLocalNotifications];
     
     // set background image
-    UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"GeoLaunch2.png"]];
-    [tempImageView setFrame:self.tableView.frame];
-    self.tableView.backgroundView = tempImageView;
+    // UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"GeoLaunch2.png"]];
+    //[tempImageView setFrame:self.tableView.frame];
+    //self.tableView.backgroundView = tempImageView;
+    
+    // set background color
+    UIColor* blue = [ UIColor colorWithRed:(9/255.0) green:(6/255.0) blue:(51/255.0) alpha:1];
+    [self.view setBackgroundColor:blue];
     self.tableView.opaque = NO;
+    
+    
     
     // Register Class for Cell Reuse Identifier
     [self.tableView registerClass:[XYZTableViewCell class] forCellReuseIdentifier:CellIdentifier];
@@ -106,6 +112,10 @@ static NSString *CellIdentifier = @"CellIdentifier";
     [self.tableView setSeparatorInset:UIEdgeInsetsZero];
     toDoItems = [[NSMutableArray alloc] init];
     
+    // part of what allows for adjustable table cell height
+    self.tableView.estimatedRowHeight = 100.0;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    
     [self loadInitialData];
 
 }
@@ -123,6 +133,12 @@ static NSString *CellIdentifier = @"CellIdentifier";
         [toDoItems addObject:item1];
         i++;
     }
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(receivedLocationChange:)
+                                                 name:@"locationChanged"
+                                               object:nil];
     
     // the following lines load saved toDoItems from the previous session
     NSString *extension = @"toDoItem";
@@ -156,6 +172,14 @@ static NSString *CellIdentifier = @"CellIdentifier";
     
 }
 
+- (void)receivedLocationChange:(NSNotification*)notification
+{
+    // Once the images are done downloading, you just need to refresh the tableView.  It will
+    // then display the newly acquired data in your table cells.
+    //NSLog(@"table reloaded!");
+    [self.tableView reloadData];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -172,15 +196,26 @@ static NSString *CellIdentifier = @"CellIdentifier";
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [toDoItems count];
+        return [toDoItems count];
 }
 
 - (XYZTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-   
+
     XYZTableViewCell *cell = (XYZTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     XYZToDoItem *toDoItem = [toDoItems objectAtIndex:indexPath.row];
-    [cell.mainLabel setText:toDoItem.itemName];
+    
+    NSString * str = toDoItem.itemName;
+    
+    if(toDoItem.match){
+        str = [str stringByAppendingString:@" at \'"];
+        str = [str stringByAppendingString:toDoItem.closeMatch.name];
+        str = [str stringByAppendingString:@"\'"];
+        str = [@"\t\t" stringByAppendingString:str];
+    }
+    str = [@"\t" stringByAppendingString:str];
+
+    [cell.mainLabel setText:str];
     
     return cell;
 }

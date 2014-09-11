@@ -21,8 +21,9 @@ CLLocation *currentLoc;
 BOOL alertsOn = YES;
 float radiusScale = 1;
 
-- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
+    CLLocation * newLocation = [locations firstObject];
     NSDate* eventDate = newLocation.timestamp;
     NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
     if (abs(howRecent) < 15.0)
@@ -31,10 +32,11 @@ float radiusScale = 1;
         if(newLocation.horizontalAccuracy < 150.0){
             //Location is accurate enough, let's use it
             
-            currentLoc = newLocation;            
+            currentLoc = newLocation;
+            [findMatches find]; // this is causing some problems
+            
         }
     }
-    
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -52,9 +54,7 @@ float radiusScale = 1;
     }
     
     if([CLLocationManager locationServicesEnabled]){
-
         [self.locationManager startUpdatingLocation];
-
     }
     
     CLLocation *location = [_locationManager location];
@@ -62,8 +62,13 @@ float radiusScale = 1;
 
     currentLoc = [[CLLocation alloc] initWithLatitude:coordinate.latitude longitude:coordinate.longitude];
     
+    // local notifications permissions
+    [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
+
+    
     return YES;
 }
+
 
 + (UIViewController*) topMostController
 {

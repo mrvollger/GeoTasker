@@ -23,11 +23,17 @@
         self.mainLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
         
         
+        //I set lineBreakMode of cell.postLabel to NSLineBreakByWordWrapping
+        // and set numberofLines = 0 ;
+        //self.mainLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        //self.mainLabel.numberOfLines = 0;
+        
         // Configure Main Label
         self.mainLabel.shadowColor = [UIColor blackColor];
         self.mainLabel.shadowOffset = CGSizeMake(-1.5, 1.5);
-        [self.mainLabel setFont:[UIFont boldSystemFontOfSize:20]];
-        [self.mainLabel setTextAlignment:NSTextAlignmentCenter];
+        [self.mainLabel setFont:[UIFont fontWithName:@"AvenirNext-Bold" size:15]];
+   
+        [self.mainLabel setTextAlignment:NSTextAlignmentLeft];
         [self.mainLabel setTextColor:[UIColor darkGrayColor]];
         [self.mainLabel setAutoresizingMask:(UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight)];
         
@@ -36,13 +42,13 @@
         
         //add a border
         [self.contentView.layer setBorderColor:[UIColor darkGrayColor].CGColor];
-        [self.contentView.layer setBorderWidth: 1.5f];
-        self.contentView.layer.cornerRadius = 1;
+        [self.contentView.layer setBorderWidth: 1.0f];
+        self.contentView.layer.cornerRadius = 10;
         
     
         // iamges for pressed and unpressed cells
-        self.backgroundView = [[UIImageView alloc] initWithImage:[ [UIImage imageNamed:@"cellback.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0] ];
-        self.selectedBackgroundView =  [[UIImageView alloc] initWithImage:[ [UIImage imageNamed:@"cellpressed.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0] ];
+        //self.backgroundView = [[UIImageView alloc] initWithImage:[ [UIImage imageNamed:@"cellback.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0] ];
+        self.selectedBackgroundView =  [[UIImageView alloc] initWithImage:[ [UIImage imageNamed:@"cellback2.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0] ];
         
         
     }
@@ -58,7 +64,10 @@
     if(match) {
         //NSLog(@"Set Text Color To Green, Matches");
         self.mainLabel.textColor = green;
-        self.backgroundView = [[UIImageView alloc] initWithImage:[ [UIImage imageNamed:@"cellback2.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0] ];
+        [self.mainLabel setTextAlignment:NSTextAlignmentLeft];
+
+        
+        //self.backgroundView = [[UIImageView alloc] initWithImage:[ [UIImage imageNamed:@"cellback2.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0] ];
         
         // add route icon
         self.imageView.image = [UIImage imageNamed:@"route.png"];
@@ -68,9 +77,11 @@
     else {
         //NSLog(@"Set Text Color To Grey, No Matches");
         self.mainLabel.textColor = gray;
-        self.backgroundView = [[UIImageView alloc] initWithImage:[ [UIImage imageNamed:@"cellback.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0] ];
+        [self.mainLabel setTextAlignment:NSTextAlignmentLeft];
+
+        //self.backgroundView = [[UIImageView alloc] initWithImage:[ [UIImage imageNamed:@"cellback.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0] ];
     
-        // remove toute icon
+        // remove route icon
         self.imageView.image = NULL;
     }
     

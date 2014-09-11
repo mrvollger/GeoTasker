@@ -40,7 +40,7 @@
         _radius = 500;
         _closeMatch = NULL;
         _current = NULL;
-        
+        _newLocation = false;
     }
     
     return self;

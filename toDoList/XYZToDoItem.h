@@ -29,6 +29,9 @@
 // where item is associated with location
 @property BOOL hasLocation;
 
+// is the location a new location
+@property BOOL newLocation;
+
 // map locations
 @property MKMapItem *current;
 @property MKMapItem *closeMatch;
