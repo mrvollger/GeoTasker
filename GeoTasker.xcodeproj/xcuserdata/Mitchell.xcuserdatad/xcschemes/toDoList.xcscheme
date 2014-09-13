@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A278E88318D9FE6A00D75E03"
-               BuildableName = "toDoList.app"
-               BlueprintName = "toDoList"
-               ReferencedContainer = "container:toDoList.xcodeproj">
+               BuildableName = "GeoTasker.app"
+               BlueprintName = "GeoTasker"
+               ReferencedContainer = "container:GeoTasker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A278E89E18D9FE6A00D75E03"
-               BuildableName = "toDoListTests.xctest"
-               BlueprintName = "toDoListTests"
-               ReferencedContainer = "container:toDoList.xcodeproj">
+               BuildableName = "GeoTaskerTests.xctest"
+               BlueprintName = "GeoTaskerTests"
+               ReferencedContainer = "container:GeoTasker.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A278E88318D9FE6A00D75E03"
-            BuildableName = "toDoList.app"
-            BlueprintName = "toDoList"
-            ReferencedContainer = "container:toDoList.xcodeproj">
+            BuildableName = "GeoTasker.app"
+            BlueprintName = "GeoTasker"
+            ReferencedContainer = "container:GeoTasker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A278E88318D9FE6A00D75E03"
-            BuildableName = "toDoList.app"
-            BlueprintName = "toDoList"
-            ReferencedContainer = "container:toDoList.xcodeproj">
+            BuildableName = "GeoTasker.app"
+            BlueprintName = "GeoTasker"
+            ReferencedContainer = "container:GeoTasker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -84,9 +84,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A278E88318D9FE6A00D75E03"
-            BuildableName = "toDoList.app"
-            BlueprintName = "toDoList"
-            ReferencedContainer = "container:toDoList.xcodeproj">
+            BuildableName = "GeoTasker.app"
+            BlueprintName = "GeoTasker"
+            ReferencedContainer = "container:GeoTasker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

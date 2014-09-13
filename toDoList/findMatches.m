@@ -122,10 +122,10 @@ CLLocationManager *locationManager;
     for (XYZToDoItem *task in toDoItems) {
         if (task.match == true && task.newLocation == true) {
             oneAlert = task;
-            
             // change the alert message to include the item name that is newly active
+            str = [str stringByAppendingString:@"\'"];
             str = [str stringByAppendingString:task.itemName];
-            str = [str stringByAppendingString:@" "];
+            str = [str stringByAppendingString:@"\' "];
             
             x = x+1;
         }

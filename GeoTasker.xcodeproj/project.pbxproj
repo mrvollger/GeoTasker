@@ -73,20 +73,20 @@
 		A242AD3418F8915800F1AA70 /* XYZMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZMapViewController.m; sourceTree = "<group>"; };
 		A242AD3518F8915800F1AA70 /* XYZMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYZMapViewController.xib; sourceTree = "<group>"; };
 		A2764C2F19A71232003DD7C5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A278E88418D9FE6A00D75E03 /* toDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A278E88418D9FE6A00D75E03 /* GeoTasker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoTasker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A278E88718D9FE6A00D75E03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A278E88918D9FE6A00D75E03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A278E88B18D9FE6A00D75E03 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A278E88F18D9FE6A00D75E03 /* toDoList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "toDoList-Info.plist"; sourceTree = "<group>"; };
 		A278E89118D9FE6A00D75E03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A278E89318D9FE6A00D75E03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A278E89518D9FE6A00D75E03 /* toDoList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "toDoList-Prefix.pch"; sourceTree = "<group>"; };
+		A278E89518D9FE6A00D75E03 /* GeoTasker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GeoTasker-Prefix.pch"; sourceTree = "<group>"; };
 		A278E89618D9FE6A00D75E03 /* XYZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZAppDelegate.h; sourceTree = "<group>"; };
 		A278E89718D9FE6A00D75E03 /* XYZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZAppDelegate.m; sourceTree = "<group>"; };
 		A278E89918D9FE6A00D75E03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A278E89F18D9FE6A00D75E03 /* toDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = toDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A278E89F18D9FE6A00D75E03 /* GeoTaskerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoTaskerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A278E8A018D9FE6A00D75E03 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		A278E8A818D9FE6A00D75E03 /* toDoListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "toDoListTests-Info.plist"; sourceTree = "<group>"; };
+		A278E8A818D9FE6A00D75E03 /* GeoTaskerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeoTaskerTests-Info.plist"; sourceTree = "<group>"; };
 		A278E8AA18D9FE6A00D75E03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A278E8AC18D9FE6A00D75E03 /* toDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = toDoListTests.m; sourceTree = "<group>"; };
 		A278E8B618DA03B400D75E03 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -152,12 +152,13 @@
 				A278E88518D9FE6A00D75E03 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		A278E88518D9FE6A00D75E03 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A278E88418D9FE6A00D75E03 /* toDoList.app */,
-				A278E89F18D9FE6A00D75E03 /* toDoListTests.xctest */,
+				A278E88418D9FE6A00D75E03 /* GeoTasker.app */,
+				A278E89F18D9FE6A00D75E03 /* GeoTaskerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,7 +217,7 @@
 				A278E88F18D9FE6A00D75E03 /* toDoList-Info.plist */,
 				A278E89018D9FE6A00D75E03 /* InfoPlist.strings */,
 				A278E89318D9FE6A00D75E03 /* main.m */,
-				A278E89518D9FE6A00D75E03 /* toDoList-Prefix.pch */,
+				A278E89518D9FE6A00D75E03 /* GeoTasker-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -233,7 +234,7 @@
 		A278E8A718D9FE6A00D75E03 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A278E8A818D9FE6A00D75E03 /* toDoListTests-Info.plist */,
+				A278E8A818D9FE6A00D75E03 /* GeoTaskerTests-Info.plist */,
 				A278E8A918D9FE6A00D75E03 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -242,9 +243,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A278E88318D9FE6A00D75E03 /* toDoList */ = {
+		A278E88318D9FE6A00D75E03 /* GeoTasker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A278E8B018D9FE6A00D75E03 /* Build configuration list for PBXNativeTarget "toDoList" */;
+			buildConfigurationList = A278E8B018D9FE6A00D75E03 /* Build configuration list for PBXNativeTarget "GeoTasker" */;
 			buildPhases = (
 				A278E88018D9FE6A00D75E03 /* Sources */,
 				A278E88118D9FE6A00D75E03 /* Frameworks */,
@@ -254,14 +255,14 @@
 			);
 			dependencies = (
 			);
-			name = toDoList;
+			name = GeoTasker;
 			productName = toDoList;
-			productReference = A278E88418D9FE6A00D75E03 /* toDoList.app */;
+			productReference = A278E88418D9FE6A00D75E03 /* GeoTasker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A278E89E18D9FE6A00D75E03 /* toDoListTests */ = {
+		A278E89E18D9FE6A00D75E03 /* GeoTaskerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A278E8B318D9FE6A00D75E03 /* Build configuration list for PBXNativeTarget "toDoListTests" */;
+			buildConfigurationList = A278E8B318D9FE6A00D75E03 /* Build configuration list for PBXNativeTarget "GeoTaskerTests" */;
 			buildPhases = (
 				A278E89B18D9FE6A00D75E03 /* Sources */,
 				A278E89C18D9FE6A00D75E03 /* Frameworks */,
@@ -272,9 +273,9 @@
 			dependencies = (
 				A278E8A518D9FE6A00D75E03 /* PBXTargetDependency */,
 			);
-			name = toDoListTests;
+			name = GeoTaskerTests;
 			productName = toDoListTests;
-			productReference = A278E89F18D9FE6A00D75E03 /* toDoListTests.xctest */;
+			productReference = A278E89F18D9FE6A00D75E03 /* GeoTaskerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -294,7 +295,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A278E87F18D9FE6A00D75E03 /* Build configuration list for PBXProject "toDoList" */;
+			buildConfigurationList = A278E87F18D9FE6A00D75E03 /* Build configuration list for PBXProject "GeoTasker" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -306,8 +307,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A278E88318D9FE6A00D75E03 /* toDoList */,
-				A278E89E18D9FE6A00D75E03 /* toDoListTests */,
+				A278E88318D9FE6A00D75E03 /* GeoTasker */,
+				A278E89E18D9FE6A00D75E03 /* GeoTaskerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -378,7 +379,7 @@
 /* Begin PBXTargetDependency section */
 		A278E8A518D9FE6A00D75E03 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A278E88318D9FE6A00D75E03 /* toDoList */;
+			target = A278E88318D9FE6A00D75E03 /* GeoTasker */;
 			targetProxy = A278E8A418D9FE6A00D75E03 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -482,10 +483,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "toDoList/toDoList-Prefix.pch";
+				GCC_PREFIX_HEADER = "toDoList/GeoTasker-Prefix.pch";
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GeoTasker;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -501,10 +502,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "toDoList/toDoList-Prefix.pch";
+				GCC_PREFIX_HEADER = "toDoList/GeoTasker-Prefix.pch";
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GeoTasker;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -526,8 +527,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "toDoListTests/toDoListTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "toDoListTests/GeoTaskerTests-Info.plist";
+				PRODUCT_NAME = GeoTaskerTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -544,8 +545,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "toDoList/toDoList-Prefix.pch";
-				INFOPLIST_FILE = "toDoListTests/toDoListTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "toDoListTests/GeoTaskerTests-Info.plist";
+				PRODUCT_NAME = GeoTaskerTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -554,7 +555,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A278E87F18D9FE6A00D75E03 /* Build configuration list for PBXProject "toDoList" */ = {
+		A278E87F18D9FE6A00D75E03 /* Build configuration list for PBXProject "GeoTasker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A278E8AE18D9FE6A00D75E03 /* Debug */,
@@ -563,7 +564,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A278E8B018D9FE6A00D75E03 /* Build configuration list for PBXNativeTarget "toDoList" */ = {
+		A278E8B018D9FE6A00D75E03 /* Build configuration list for PBXNativeTarget "GeoTasker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A278E8B118D9FE6A00D75E03 /* Debug */,
@@ -572,7 +573,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A278E8B318D9FE6A00D75E03 /* Build configuration list for PBXNativeTarget "toDoListTests" */ = {
+		A278E8B318D9FE6A00D75E03 /* Build configuration list for PBXNativeTarget "GeoTaskerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A278E8B418D9FE6A00D75E03 /* Debug */,

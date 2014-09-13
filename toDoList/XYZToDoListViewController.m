@@ -18,6 +18,11 @@
 @end
 
 NSMutableArray *toDoItems = nil;
+
+NSMutableArray *toDoItemsNoMatch = nil;
+NSMutableArray *toDoItemsMatch = nil;
+
+
 // this allows for refreashing
 UIRefreshControl * refreshControl = nil;
 // the is the cell identifyer which can be found in main.
@@ -39,8 +44,27 @@ static NSString *CellIdentifier = @"CellIdentifier";
         [toDoItems addObject:item];
         [findMatches find];
         [self.tableView reloadData];
+    
+    
+    
+    //sets a delay which allows findmatches to complete
+    int64_t delayInSeconds = 1.5;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        if(item.match){
+            [toDoItemsMatch addObject:item];
+        }
+        else{
+            [toDoItemsNoMatch addObject:item];
+        }
+        NSLog(@"%@", toDoItemsMatch.firstObject);
+        NSLog(@"%@", toDoItemsNoMatch.firstObject);
+        [self.tableView reloadData];
+    });
+
     }
-    //NSLog(@"%@", item.itemLocation);
+
+
 }
 
 - (void)refreshTable{
@@ -110,8 +134,7 @@ static NSString *CellIdentifier = @"CellIdentifier";
     
     // extends lines in the table to edges
     [self.tableView setSeparatorInset:UIEdgeInsetsZero];
-    toDoItems = [[NSMutableArray alloc] init];
-    
+   
     // part of what allows for adjustable table cell height
     self.tableView.estimatedRowHeight = 100.0;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
@@ -121,6 +144,11 @@ static NSString *CellIdentifier = @"CellIdentifier";
 }
 
 - (void)loadInitialData {
+    
+    // create arrays
+    toDoItems = [[NSMutableArray alloc] init];
+    toDoItemsMatch = [[NSMutableArray alloc] init];
+    toDoItemsNoMatch = [[NSMutableArray alloc] init];
     
     int i = 0;
     // stress test
@@ -167,6 +195,17 @@ static NSString *CellIdentifier = @"CellIdentifier";
         [self.tableView reloadData];
     });
     
+    // populate the other to do lists
+    XYZToDoItem * item = nil;
+    for(item in toDoItems){
+        if(item.match){
+            [toDoItemsMatch addObject:item];
+        }
+        else{
+            [toDoItemsNoMatch addObject:item];
+        }
+    }
+    
     //cancel outstanding notifications when the user sees all the to do items
     [[UIApplication sharedApplication] cancelAllLocalNotifications];
     
@@ -177,6 +216,17 @@ static NSString *CellIdentifier = @"CellIdentifier";
     // Once the images are done downloading, you just need to refresh the tableView.  It will
     // then display the newly acquired data in your table cells.
     //NSLog(@"table reloaded!");
+    // populate the other to do lists
+    XYZToDoItem * item = nil;
+    for(item in toDoItems){
+        if(item.match){
+            [toDoItemsMatch addObject:item];
+        }
+        else{
+            [toDoItemsNoMatch addObject:item];
+        }
+    }
+    
     [self.tableView reloadData];
 }
 
