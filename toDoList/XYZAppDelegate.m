@@ -33,7 +33,7 @@ float radiusScale = 1;
             //Location is accurate enough, let's use it
             
             currentLoc = newLocation;
-            [findMatches find]; // this is causing some problems
+            [findMatches find]; 
             
         }
     }
