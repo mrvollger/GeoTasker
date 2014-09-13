@@ -79,16 +79,24 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
       // capatalize the name
       self.name1.autocapitalizationType = UITextAutocapitalizationTypeWords;
 
-    
+
+      
     self.name1.clipsToBounds = YES;
     self.name1.layer.cornerRadius = 5.0f;
-  //  self.name1.layer.borderColor = [[UIColor midnightBlueColor] CGColor];
+    //self.name1.layer.borderColor = [[UIColor midnightBlueColor] CGColor];
     self.name1.layer.borderWidth = 0.1;
     
     self.notesBox.clipsToBounds = YES;
     self.notesBox.layer.cornerRadius = 5.0f;
    // self.notesBox.layer.borderColor = [[UIColor midnightBlueColor] CGColor];
     self.notesBox.layer.borderWidth = 0.1;
+      
+      // set text boxes to gray
+      /*UIColor * gray = [[UIColor alloc] init];
+      gray = [UIColor lightGrayColor];
+      self.name1.backgroundColor = gray;
+      self.notesBox.backgroundColor = gray;*/
+
       
     CGSize sizeThatFitsTextView = [notesBox sizeThatFits:CGSizeMake(notesBox.frame.size.width, MAXFLOAT)];
     _TextViewHeightConstraint.constant = ceilf(sizeThatFitsTextView.height);
@@ -148,13 +156,11 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
 
 - (BOOL)textFieldShouldEndEditing:(UITextField *)textField{
     NSLog(@"textFieldShouldEndEditing");
-    textField.backgroundColor = [UIColor clearColor];
     return YES;
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField{
     NSLog(@"textFieldDidEndEditing");
-    textField.backgroundColor = [UIColor clearColor];
       
       [textField resignFirstResponder];
     
@@ -280,7 +286,6 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
 
 - (BOOL)textViewShouldEndEditing:(UITextView *)textView{
     NSLog(@"textFieldShouldEndEditing");
-    textView.backgroundColor = [UIColor clearColor];
     return YES;
 }
 
