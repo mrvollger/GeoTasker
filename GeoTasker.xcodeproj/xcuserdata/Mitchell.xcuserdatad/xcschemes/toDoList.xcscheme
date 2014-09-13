@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A278E88318D9FE6A00D75E03"
-               BuildableName = "GeoTasker.app"
+               BuildableName = "GeoTasker2.temp_caseinsensitive_rename.app"
                BlueprintName = "GeoTasker"
                ReferencedContainer = "container:GeoTasker.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A278E89E18D9FE6A00D75E03"
-               BuildableName = "GeoTaskerTests.xctest"
+               BuildableName = "GeoTasker2.temp_caseinsensitive_renameTests.xctest"
                BlueprintName = "GeoTaskerTests"
                ReferencedContainer = "container:GeoTasker.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A278E88318D9FE6A00D75E03"
-            BuildableName = "GeoTasker.app"
+            BuildableName = "GeoTasker2.temp_caseinsensitive_rename.app"
             BlueprintName = "GeoTasker"
             ReferencedContainer = "container:GeoTasker.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A278E88318D9FE6A00D75E03"
-            BuildableName = "GeoTasker.app"
+            BuildableName = "GeoTasker2.temp_caseinsensitive_rename.app"
             BlueprintName = "GeoTasker"
             ReferencedContainer = "container:GeoTasker.xcodeproj">
          </BuildableReference>
@@ -84,7 +84,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A278E88318D9FE6A00D75E03"
-            BuildableName = "GeoTasker.app"
+            BuildableName = "GeoTasker2.temp_caseinsensitive_rename.app"
             BlueprintName = "GeoTasker"
             ReferencedContainer = "container:GeoTasker.xcodeproj">
          </BuildableReference>

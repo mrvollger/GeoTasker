@@ -73,20 +73,20 @@
 		A242AD3418F8915800F1AA70 /* XYZMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZMapViewController.m; sourceTree = "<group>"; };
 		A242AD3518F8915800F1AA70 /* XYZMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYZMapViewController.xib; sourceTree = "<group>"; };
 		A2764C2F19A71232003DD7C5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A278E88418D9FE6A00D75E03 /* GeoTasker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoTasker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A278E88418D9FE6A00D75E03 /* GeoTasker.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoTasker.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A278E88718D9FE6A00D75E03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A278E88918D9FE6A00D75E03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A278E88B18D9FE6A00D75E03 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A278E88F18D9FE6A00D75E03 /* toDoList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "toDoList-Info.plist"; sourceTree = "<group>"; };
 		A278E89118D9FE6A00D75E03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A278E89318D9FE6A00D75E03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A278E89518D9FE6A00D75E03 /* GeoTasker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GeoTasker-Prefix.pch"; sourceTree = "<group>"; };
+		A278E89518D9FE6A00D75E03 /* GeoTasker.temp_caseinsensitive_rename-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GeoTasker.temp_caseinsensitive_rename-Prefix.pch"; sourceTree = "<group>"; };
 		A278E89618D9FE6A00D75E03 /* XYZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZAppDelegate.h; sourceTree = "<group>"; };
 		A278E89718D9FE6A00D75E03 /* XYZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZAppDelegate.m; sourceTree = "<group>"; };
 		A278E89918D9FE6A00D75E03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A278E89F18D9FE6A00D75E03 /* GeoTaskerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoTaskerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A278E89F18D9FE6A00D75E03 /* GeoTasker.temp_caseinsensitive_renameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoTasker.temp_caseinsensitive_renameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A278E8A018D9FE6A00D75E03 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		A278E8A818D9FE6A00D75E03 /* GeoTaskerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeoTaskerTests-Info.plist"; sourceTree = "<group>"; };
+		A278E8A818D9FE6A00D75E03 /* GeoTasker.temp_caseinsensitive_renameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeoTasker.temp_caseinsensitive_renameTests-Info.plist"; sourceTree = "<group>"; };
 		A278E8AA18D9FE6A00D75E03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A278E8AC18D9FE6A00D75E03 /* toDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = toDoListTests.m; sourceTree = "<group>"; };
 		A278E8B618DA03B400D75E03 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -157,8 +157,8 @@
 		A278E88518D9FE6A00D75E03 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A278E88418D9FE6A00D75E03 /* GeoTasker.app */,
-				A278E89F18D9FE6A00D75E03 /* GeoTaskerTests.xctest */,
+				A278E88418D9FE6A00D75E03 /* GeoTasker.temp_caseinsensitive_rename.app */,
+				A278E89F18D9FE6A00D75E03 /* GeoTasker.temp_caseinsensitive_renameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,7 +217,7 @@
 				A278E88F18D9FE6A00D75E03 /* toDoList-Info.plist */,
 				A278E89018D9FE6A00D75E03 /* InfoPlist.strings */,
 				A278E89318D9FE6A00D75E03 /* main.m */,
-				A278E89518D9FE6A00D75E03 /* GeoTasker-Prefix.pch */,
+				A278E89518D9FE6A00D75E03 /* GeoTasker.temp_caseinsensitive_rename-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -234,7 +234,7 @@
 		A278E8A718D9FE6A00D75E03 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A278E8A818D9FE6A00D75E03 /* GeoTaskerTests-Info.plist */,
+				A278E8A818D9FE6A00D75E03 /* GeoTasker.temp_caseinsensitive_renameTests-Info.plist */,
 				A278E8A918D9FE6A00D75E03 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -257,7 +257,7 @@
 			);
 			name = GeoTasker;
 			productName = toDoList;
-			productReference = A278E88418D9FE6A00D75E03 /* GeoTasker.app */;
+			productReference = A278E88418D9FE6A00D75E03 /* GeoTasker.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A278E89E18D9FE6A00D75E03 /* GeoTaskerTests */ = {
@@ -275,7 +275,7 @@
 			);
 			name = GeoTaskerTests;
 			productName = toDoListTests;
-			productReference = A278E89F18D9FE6A00D75E03 /* GeoTaskerTests.xctest */;
+			productReference = A278E89F18D9FE6A00D75E03 /* GeoTasker.temp_caseinsensitive_renameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -483,10 +483,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "toDoList/GeoTasker-Prefix.pch";
+				GCC_PREFIX_HEADER = "toDoList/GeoTasker.temp_caseinsensitive_rename-Prefix.pch";
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = GeoTasker;
+				PRODUCT_NAME = GeoTasker.temp_caseinsensitive_rename;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -502,10 +502,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "toDoList/GeoTasker-Prefix.pch";
+				GCC_PREFIX_HEADER = "toDoList/GeoTasker.temp_caseinsensitive_rename-Prefix.pch";
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = GeoTasker;
+				PRODUCT_NAME = GeoTasker.temp_caseinsensitive_rename;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -527,8 +527,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "toDoListTests/GeoTaskerTests-Info.plist";
-				PRODUCT_NAME = GeoTaskerTests;
+				INFOPLIST_FILE = "toDoListTests/GeoTasker.temp_caseinsensitive_renameTests-Info.plist";
+				PRODUCT_NAME = GeoTasker.temp_caseinsensitive_renameTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -545,8 +545,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "toDoList/toDoList-Prefix.pch";
-				INFOPLIST_FILE = "toDoListTests/GeoTaskerTests-Info.plist";
-				PRODUCT_NAME = GeoTaskerTests;
+				INFOPLIST_FILE = "toDoListTests/GeoTasker.temp_caseinsensitive_renameTests-Info.plist";
+				PRODUCT_NAME = GeoTasker.temp_caseinsensitive_renameTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
